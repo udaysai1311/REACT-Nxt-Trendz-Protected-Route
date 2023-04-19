@@ -97,6 +97,7 @@ class LoginForm extends Component {
     if (Cookies.get('jwt_token') !== undefined) {
       // When the user is loggedin and trying to navigate to '/login' path then he is redirected to "/" home page
       return <Redirect to="/" />
+    }
     return (
       <div className="login-form-container">
         <img
